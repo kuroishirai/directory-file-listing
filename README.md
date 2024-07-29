@@ -15,7 +15,7 @@ python script.py /path/to/parent_dir
 ```
 
 ## Arguments
-`parent_dir`：検索を開始する親ディレクトリのパスを指定します。
+`parent_dir`： The path to the parent directory where the search will start.
 
 ## Output
 output.txt: A file containing the list of files with specific extensions. This file will be created in the directory where the script is executed.
