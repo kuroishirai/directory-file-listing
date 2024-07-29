@@ -1,10 +1,17 @@
 import os
+import argparse
+parser = argparse.ArgumentParser(description="Process some integers.")
+parser.add_argument('parent_dir', type=str, help='The parent directory')
 
-# target directory
-parent_dir = '/Users/tatsuya-shi/research'
+# 引数を解析
+args = parser.parse_args()
+
+# parent_dirを使用
+parent_dir = args.parent_dir
+
 
 # output file path
-output_file = '/Users/tatsuya-shi/research/program/__test/output.txt'
+output_file = 'output.txt'
 
 # Please change to Build Log extension
 extension = ['', '.txt']
