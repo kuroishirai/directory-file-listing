@@ -3,10 +3,8 @@ import argparse
 parser = argparse.ArgumentParser(description="Process some integers.")
 parser.add_argument('parent_dir', type=str, help='The parent directory')
 
-# 引数を解析
 args = parser.parse_args()
 
-# parent_dirを使用
 parent_dir = args.parent_dir
 
 
@@ -21,7 +19,7 @@ file_list = []
 # Get files by directory
 for dirpath, dirnames, filenames in os.walk(parent_dir):
     for filename in filenames:
-        # ファイルの拡張子を取得
+        
         file_name, ext = os.path.splitext(filename)
         
         # match extension
